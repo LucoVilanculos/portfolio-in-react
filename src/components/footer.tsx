@@ -15,7 +15,7 @@ export const Footer = ({ name }: FooterProps) => {
         <GithubLogoIcon size={28} className="hover:scale-110 transition-transform duration-300 cursor-pointer" />
       </div>
       <p className="text-sm">
-        &copy; {new Date().getFullYear()} All rigths include and reserved for <strong>{name}</strong>
+        &copy; {new Date().getFullYear()} all rights included and reserved for <strong>{name}</strong>
       </p>
     </footer>
   );
