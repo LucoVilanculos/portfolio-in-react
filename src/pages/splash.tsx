@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
-
-
+import { useNavigate } from "react-router-dom";
 
 export const SplashScreen = () => {
   const [fadeOut, setFadeOut] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => setFadeOut(true), 7000);
+    const timer = setTimeout(() => {
+      setFadeOut(true);
+      // Aguarda o tempo da animação (1s) antes de navegar
+      setTimeout(() => navigate("/home"), 1000); 
+    }, 7000);
+
     return () => clearTimeout(timer);
-  }, []);
+  }, [navigate]);
 
   return (
     <div
@@ -26,9 +31,10 @@ export const SplashScreen = () => {
           Welcome to my Portfolio
         </h1>
         <br />
-        <p className="text-xl lg:text-4xl animate-pulse">Loading your personalized experience...</p>
+        <p className="text-xl lg:text-4xl animate-pulse">
+          Loading your personalized experience...
+        </p>
       </div>
     </div>
   );
 };
-

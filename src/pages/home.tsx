@@ -1,25 +1,19 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+
 
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
-import { SplashScreen } from "../components/splash";
 
 export const Home = () => {
   const navigate = useNavigate();
-  const [splash, setSplash] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setSplash(false), 5000);
-    return () => clearTimeout(timer);
-  }, []);
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-950 via-cyan-700 to-blue-950 text-white flex flex-col">
       <Header title="Junior Full-Stack Developer" />
 
-      {splash && <SplashScreen />}
-      {!splash && (
+      
         <main className="flex-1 px-4 py-8 flex justify-center items-center gap-10">
           {/* Card com Logo e Título */}
           <div className="bg-cyan-800 p-8 rounded-3xl shadow-xl flex flex-col items-center text-center max-w-lg w-full animate-fade-in-up">
@@ -64,13 +58,13 @@ export const Home = () => {
 
             <button
               onClick={() => navigate("/project")}
-              className="mt-6 bg-white text-whiy  font-bold px-6 py-2 rounded-full shadow-md hover:bg-cyan-200 transition"
+              className="mt-6 bg-white text-cyan-800  font-bold px-6 py-2 rounded-full shadow-md hover:bg-cyan-200 transition"
             >
               View Projects 🚀
             </button>
           </div>
         </main>
-      )}
+    
 
       <Footer date={new Date()} name="Luco" />
     </div>

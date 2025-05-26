@@ -4,7 +4,7 @@ import { ErrorPage } from "./errorpage";
 import { Pages } from "./pages";
 import { Project } from "./project";
 import { Resume } from "./resume";
-import { SplashScreen } from "../components/splash";
+import { SplashScreen } from "../pages/splash";
 
 
 

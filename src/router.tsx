@@ -6,13 +6,18 @@ import {
   Project,
   Pages,
   Contact,
+  SplashScreen,
 } from "./pages";
 
 const router = createBrowserRouter([
 
-
   {
     path: "/",
+    element: <SplashScreen />,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/home",
     element: <Home />,
     errorElement: <ErrorPage/>
   },
