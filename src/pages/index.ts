@@ -4,7 +4,8 @@ import { ErrorPage } from "./errorpage";
 import { Pages } from "./pages";
 import { Project } from "./project";
 import { Resume } from "./resume";
+import { SplashScreen } from "../components/splash";
 
 
 
-export {ErrorPage, Home, Resume, Project, Pages, Contact}
+export {ErrorPage, SplashScreen, Home, Resume, Project, Pages, Contact}
