@@ -14,7 +14,7 @@ export const Home = () => {
       <Header title="Junior Full-Stack Developer" />
 
       
-        <main className="flex-1 px-4 py-8 flex justify-center items-center gap-10">
+        <main className="flex-1 px-4 py-8 flex flex-col md:flex-row justify-center items-center gap-10">
           {/* Card com Logo e Título */}
           <div className="bg-cyan-800 p-8 rounded-3xl shadow-xl flex flex-col items-center text-center max-w-lg w-full animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl font-black">Luco Vilanculos</h1>
@@ -39,7 +39,7 @@ export const Home = () => {
           </div>
 
           {/* Card com About */}
-          <div className="bg-cyan-800 p-8 rounded-3xl shadow-xl max-w-4xl w-300 animate-fade-in-up text-center">
+          <div className="bg-cyan-800 p-8 rounded-3xl shadow-xl max-w-xl w-full animate-fade-in-up text-center mt-8 md:mt-0">
             <h1 className="text-3xl md:text-4xl font-black">About</h1>
             <br />
 
@@ -58,7 +58,7 @@ export const Home = () => {
 
             <button
               onClick={() => navigate("/project")}
-              className="mt-6 bg-white text-cyan-800  font-bold px-6 py-2 rounded-full shadow-md hover:bg-cyan-200 transition"
+              className="mt-6 bg-white text-cyan-800  font-bold px-6 py-2 rounded-full shadow-md hover:bg-cyan-700 hover:text-white transition"
             >
               View Projects 🚀
             </button>
