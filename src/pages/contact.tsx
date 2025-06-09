@@ -10,7 +10,7 @@ export const Contact = () => {
 
   return (
     <div className="min-h-screen bg-cyan-800 flex flex-col">
-      <Header title="Junior Full-Stack Developer" />
+      <Header title="Luco Vilanculos" />
 
       <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-blue-950 via-cyan-700 to-blue-950 animate-gradient p-4">
         {state.succeeded ? (

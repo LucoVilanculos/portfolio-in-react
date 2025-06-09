@@ -39,7 +39,7 @@ export const Resume = () => {
 
   return (
     <div className="min-h-screen bg-slate-200 flex flex-col">
-      <Header title="Junior Full-Stack Developer" />
+      <Header title="Luco Vilanculos" />
 
       <div className="flex-1 w-full bg-gradient-to-br from-blue-950 via-cyan-700 to-blue-950 text-white p-6 md:p-16 overflow-hidden animate-gradient">
         <main className="max-w-6xl mx-auto animate-fade-in-up space-y-16">

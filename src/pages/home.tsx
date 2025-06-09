@@ -11,7 +11,7 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-950 via-cyan-700 to-blue-950 text-white flex flex-col">
-      <Header title="Junior Full-Stack Developer" />
+      <Header title="Luco Vilanculos" />
 
       
         <main className="flex-1 px-4 py-8 flex flex-col md:flex-row justify-center items-center gap-10">

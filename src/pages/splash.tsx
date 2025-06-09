@@ -9,8 +9,8 @@ export const SplashScreen = () => {
     const timer = setTimeout(() => {
       setFadeOut(true);
       // Aguarda o tempo da animação (1s) antes de navegar
-      setTimeout(() => navigate("/home"), 1000); 
-    }, 7000);
+      setTimeout(() => navigate("/home"), 2000); 
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [navigate]);

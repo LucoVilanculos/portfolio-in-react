@@ -27,7 +27,7 @@ export const Project = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-950 via-cyan-700 to-blue-950 text-white flex flex-col animate-gradient">
-      <Header title="Junior Full-Stack Developer" />
+      <Header title="Luco Vilanculos" />
       
       <main className="flex-1 p-6 overflow-y-auto animate-fade-in-up">
         <div className="flex justify-between items-center mb-6">

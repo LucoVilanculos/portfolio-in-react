@@ -5,7 +5,7 @@ import { SocialCards } from "../components/cards";
 export const Pages = () => {
   return (
     <div className="min-h-screen bg-slate-200 flex flex-col">
-      <Header title="Junior Full-Stack Developer" />
+      <Header title="Luco Vilanculos" />
 
       <div
         className="flex-1 flex flex-col items-center text-white font-bold text-center
